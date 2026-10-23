@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>C++ Daily</title>
+<meta name="description" content="Learn C++ from zero, one short day at a time: a lesson, quick checks and real problems you run and test in the browser.">
+<meta name="theme-color" content="#102131">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23102131'/%3E%3Cpath d='M15 10.5a6 6 0 1 0 0 11' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3Cpath d='M19 16h5M21.5 13.5v5' stroke='%235aa9f0' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="stack" style="gap:6px">
+      <span class="tag">Learn C++ from zero</span>
+      <h1>C++<span>/</span>Daily</h1>
+    </div>
+    <div class="strip tabular">
+      <span>Day <b id="sDay">1</b>/<span id="sTotal">30</span></span>
+      <span>Streak <b id="sStreak">0</b>d</span>
+      <span>Solved <b id="sSolved">0</b></span>
+    </div>
+  </header>
+  <nav aria-label="Sections">
+    <span id="navind" aria-hidden="true"></span>
+    <button data-v="today" aria-selected="true">Today</button>
+    <button data-v="course" aria-selected="false">Course</button>
+    <button data-v="review" aria-selected="false">Review</button>
+    <button data-v="progress" aria-selected="false">Progress</button>
+  </nav>
+  <main>
+    <section class="panel" id="v-today"></section>
+    <section class="panel" id="v-course" hidden></section>
+    <section class="panel" id="v-review" hidden></section>
+    <section class="panel" id="v-progress" hidden></section>
+  </main>
+  <p class="foot">Progress is saved in this browser. Code runs on <a href="https://godbolt.org" target="_blank" rel="noopener">Compiler Explorer</a>.</p>
+</div>
+<script src="assets/course-1.js"></script>
+<script src="assets/course-2.js"></script>
+<script src="assets/course-3.js"></script>
+<script src="assets/course-4.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
